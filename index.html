@@ -6,18 +6,113 @@
     <title>Zero Buzz Brew</title>
     <link rel="stylesheet" href="/css/mainstyle.css">
     <link rel="icon" href="/img/ZBLogoSort.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<script src="myScript.js"></script> 
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <a class="logo" href="index.html">
             <img src="/img/MainLogoSort.png" class="logo" alt="Zero Buzz Brew Logo">
         </a>
+        <nav class="submenu">
+            <ul>
+              <li><a href="Voresøl.html">Vores Øl</a></li>
+              <li><a href="mereendpromille.html">Mere end promille</a></li>
+              <li><a href="omos.html">Om os</a></li>
+            </ul>
+          </nav>
     </header>
     <main>
+        <section class="video-section">
+            <video muted loop id="header-video">
+              <source src="/video/Tre øl.mp4" type="video/mp4">
+              Din browser understøtter ikke video.
+            </video>
+            <div class="scroll-arrow">&#x25BC;</div>
+          </section>
+
+          <section class="product-teaser">
+            <div class="product-container">
+              <div class="cans">
+                <div class="cans">
+                    <a href="Voresøl.html#pils-section">
+                    <img
+                      class="can lightstream"
+                      src="/img/LightstreamPilsSkygge.png"
+                      alt="Lightstream Pils"
+                    />
+                    </a>
+              
+                    <a href="Voresøl.html#blanc-section">
+                    <img
+                      class="can luftkastel"
+                      src="/img/LuftkastelBlancSkygge.png"
+                      alt="Luftkastel Blanc"
+                    />
+                    </a>
+                    <a href="Voresøl.html#ipa-section">
+                    <img
+                      class="can Sunset-IPA"
+                      src="/img/SunsetIPASkygge.png"
+                      alt="Sunset IPA"
+                    />
+                    </a>
+                  </div>
+                </div>
+              <div class="product-text">
+                <br>
+                <h2>Smage du elsker</h2>
+                <br>
+                <p>Gå på opdagelse i vores forfriskende og smagfulde alkoholfrie øl</p>
+                <br>
+                <a href="Voresøl.html" class="cta-btn">Find vores øl her!</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="content">
+          </section>
         
+          <div class="blå-boks">
+            <h1>Vi brygger til fællesskabet</h1>
+            <p>#NoBuzzNoPressure</p>
+        </div>
+          
+
     </main>
     <footer>
-        
+    <div class="hvid-boks">
+        <div id="footer-logo" class="footer-section">
+            <a href="index.html"></a>
+            <img src="img/MainLogoSort.png" alt="Logo">
+        </div>
+        <div class="footer-section">
+            <h3>Vores øl</h3>
+            <p>
+                Lightstream Pils<br>
+                <br>
+                Luftkastel blanc<br></p>
+        </div>
+        <div class="footer-section">
+            <h3>Kontakt</h3>
+            <p>
+                ZeroBB@gmail.com <br>
+                <br>
+                Poppeltoften 14, Hasselager<br></p>
+        </div>
+        <div class="footer-section">
+            
+            <div class="ikoner">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+                <br>
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+            </div>
+        </div>
+    </div>
     </footer>
 </body>
 </html>
