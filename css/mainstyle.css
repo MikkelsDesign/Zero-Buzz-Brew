@@ -247,9 +247,8 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #FFDEE1;
-  padding: 100px 175px;
   text-align: center;
 }
 
@@ -266,9 +265,14 @@ hr {
 }
 
 .countdown-section img {
-  width: 50%;
+  max-width: 40%;
   height: auto;
   object-fit: scale-down;
+  margin: 6rem 3rem;
+}
+
+.countdown-right{
+  margin: 6rem 2rem;
 }
 
 #countdown {
@@ -276,8 +280,10 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   background-color: #FFFFFF;
-  padding: 4rem;
-  margin: 3rem;
+  padding: 10%;
+  width: auto;
+  max-width: 100%;
+  height: auto;
   font-family: Libre Franklin;
 }
 
