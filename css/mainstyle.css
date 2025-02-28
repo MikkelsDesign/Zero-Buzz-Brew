@@ -1,271 +1,381 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* logo af ZBB i øverste venstre hjørne */
+/* logo af ZBB i øverste venstre hjørne */
+
+/*Generel CSS*/
+
+h2 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  font-family: Renogare;
+  font-weight: 500;
+}
+
+hr {
+  height: 0.2rem;
+  background-color: #000000;
+  color: #000000;
+  margin: 1rem;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background-color: #D77A61;
+  /* Adjust color if needed */
+  color: #FFFFFF;
+  padding: 25px 40px;
+  font-family: Libre Franklin;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #C46953;
+}
 
 
+/*----------------------------------------------Header------------------------------------------*/
 #site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-    background-color: transparent;
-  }
-
-  #site-header.scrolled {
-    background-color: rgba(255, 255, 255, 0.8); /* Baggrund når der scrolles ned */
-    opacity: 80;
-  }
-
-
-  .submenu ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .submenu ul li {
-    margin-left: 40px;
-  }
-  
-  .submenu ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 22px;
-    font-family: Renogare;
-    position: relative;
-    transition: color 0.6s ease;
-  }
-
-  .submenu ul li a::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #000000; 
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
-  }
-  
-  .submenu ul li a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-
-  .logo   {
-    max-width: 105px;
-    max-height: 105px;
-    margin: 0;
-    display: block;
-    float: left;
-    transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  background-color: transparent;
 }
-  
+
+#site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Baggrund når der scrolles ned */
+  opacity: 80;
+}
+
+
+.submenu ul {
+  list-style: none;
+  display: flex;
+}
+
+.submenu ul li {
+  margin-left: 40px;
+}
+
+.submenu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 22px;
+  font-family: Renogare;
+  position: relative;
+  transition: color 0.6s ease;
+}
+
+.submenu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.submenu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.logo {
+  max-width: 105px;
+  max-height: 105px;
+  margin: 0;
+  display: block;
+  float: left;
+  transition: transform 0.3s ease;
+}
+
 .logo img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/*-------------------------------------------------Index CSS----------------------------------------*/
+#header-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #008080;
+  animation: arrowMove 1.5s infinite ease-in-out;
+}
+
+@keyframes arrowMove {
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
   }
 
- #header-video {
-    width: 100%;
-    height: auto;
-    display: block;
+  50% {
+    transform: translateX(-50%) translateY(-10px);
   }
+}
 
-  .scroll-arrow {
-    position: absolute;
-    bottom: 20px; 
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem; 
-    color: #008080; 
-    animation: arrowMove 1.5s infinite ease-in-out;
-  }
-  
-  @keyframes arrowMove {
-    0%, 100% {
-      transform: translateX(-50%) translateY(0);
-    }
-    50% {
-      transform: translateX(-50%) translateY(-10px);
-    }
-  }
-  
- /* Product Teaser Section */
+/* Product Teaser Section */
 .product-teaser {
-    background-color: #F5E6CC; /* Beige background */
-    padding: 60px 240px;
-  }
-  
-  /* Container for cans + text side by side */
-  .product-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    height: 600px;
-    justify-content: space-between;
-  }
-  
-  /* Cans container with fixed dimensions to position images absolutely */
-  .cans {
-    position: relative;
-    width: 350px;  /* Adjust to fit your images and desired overlap */
-    height: 250px; /* Enough height for your tallest can */
-    flex: 0 0 auto; 
-    margin-right: 40px; /* Space between cans and text */
-  }
-  
-  /* Base styling for all cans */
-  .can {
-    position: absolute;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Hover effect (optional) */
-  .can:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Lightstream Pils (front can, largest) */
-  .lightstream {
-    width: 200px;   /* Adjust size as needed */
-    left: 0;        /* Position at the left edge */
-    top: 0;         /* Adjust vertical positioning if desired */
-    z-index: 3;     /* Highest z-index so it's in front */
-  }
-  
-  /* Luftkastel Blanc (middle can) */
-  .luftkastel {
-    width: 180px;   /* Slightly smaller */
-    left: 120px;     /* Overlap Lightstream */
-    top: 20px;      /* Slight vertical offset */
-    z-index: 2;
-  }
-  
-  /* Peach Haze IPA (back can, smallest) */
-  .Sunset-IPA {
-    width: 200px;   /* Smallest can */
-    left: 240px;    /* Further overlap */
-    top: 50px;      /* A bit lower to create depth */
-    z-index: 1;
-  }
-  
-  /* Product Text on the right */
-  .product-text {
-    text-align: left;
-  }
-  
-  .product-text h2 {
-    font-size: 3.2rem;
-    margin-bottom: 15px;
-    font-family: Renogare;
-  }
-  
-  .product-text p {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    max-width: 400px;
-    font-family: Libre Franklin; 
-  }
-  
-  /* CTA Button */
-  .cta-btn {
-    display: inline-block;
-    background-color: #D77A61; /* Adjust color if needed */
-    color: #FFFFFF;
-    padding: 25px 40px;
-    font-family: Libre Franklin;
-    font-size: 1.6rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-btn:hover {
-    background-color: #C46953;
-  }
-  
-  .blå-boks {
-    color: rgb(0, 0, 0);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	gap: 2rem;
-	font-family: Libre Franklin;
-	width: 100%;
-    background-color: #128181; 
-    width: 100%;
-    padding: 45px;
-    color: #ffffff;  
-  }
+  background-color: #F5E6CC;
+  /* Beige background */
+  padding: 60px 240px;
+}
 
-  /* styling af footer */
+/* Container for cans + text side by side */
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: space-between;
+}
+
+/* Cans container with fixed dimensions to position images absolutely */
+.cans {
+  position: relative;
+  width: 350px;
+  /* Adjust to fit your images and desired overlap */
+  height: 250px;
+  /* Enough height for your tallest can */
+  flex: 0 0 auto;
+  margin-right: 40px;
+  /* Space between cans and text */
+}
+
+/* Base styling for all cans */
+.can {
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (optional) */
+.can:hover {
+  transform: scale(1.05);
+}
+
+/* Lightstream Pils (front can, largest) */
+.lightstream {
+  width: 200px;
+  /* Adjust size as needed */
+  left: 0;
+  /* Position at the left edge */
+  top: 0;
+  /* Adjust vertical positioning if desired */
+  z-index: 3;
+  /* Highest z-index so it's in front */
+}
+
+/* Luftkastel Blanc (middle can) */
+.luftkastel {
+  width: 180px;
+  /* Slightly smaller */
+  left: 120px;
+  /* Overlap Lightstream */
+  top: 20px;
+  /* Slight vertical offset */
+  z-index: 2;
+}
+
+/* Peach Haze IPA (back can, smallest) */
+.Sunset-IPA {
+  width: 200px;
+  /* Smallest can */
+  left: 240px;
+  /* Further overlap */
+  top: 50px;
+  /* A bit lower to create depth */
+  z-index: 1;
+}
+
+/* Product Text on the right */
+.product-text {
+  text-align: left;
+}
+
+.product-text h2 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+  font-family: Renogare;
+}
+
+.product-text p {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  max-width: 400px;
+  font-family: Libre Franklin;
+}
+
+
+/*--------------------------------------------Countdown------------------------------------------*/
+.countdown-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFDEE1;
+  padding: 100px 175px;
+  text-align: center;
+}
+
+.countdown-section h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  padding: 0;
+}
+
+.countdown-section h3 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.countdown-section img {
+  width: 50%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+#countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 4rem;
+  margin: 3rem;
+  font-family: Libre Franklin;
+  width: 700px;
+}
+
+.countdown-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 1rem 2rem;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width:400px;
+}
+
+.tal {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.vl {
+  border-left: 4px solid black;
+  height: 100px;
+}
+
+/* ---------------------------------------styling af footer ---------------------------------------*/
+.blå-boks {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  font-family: Libre Franklin;
+  width: 100%;
+  background-color: #128181;
+  width: 100%;
+  padding: 45px;
+  color: #ffffff;
+}
+
+
 footer {
-	color: rgb(0, 0, 0);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	gap: 2rem;
-	font-family: "albert-bold";
-	width: 100%;
-    padding: 4rem 1rem;
-}
-.hvid-boks
-{
-flex-direction: row;
-display: flex;
-width: 100%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  font-family: "albert-bold";
+  width: 100%;
+  padding: 4rem 1rem;
 }
 
-.footer-section{
-	flex: 1;
-	padding: 20px;
-	font-family: 'Inter_18pt-Light', Arial, Helvetica, sans-serif;
-    color: #ffffff;
+.hvid-boks {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
 }
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  font-family: 'Inter_18pt-Light', Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
 h3 {
-	font-size: 1rem;
-	padding: 1rem 0 0 1rem;
-	color: black;
-    font-family: Libre Franklin;
+  font-size: 1rem;
+  padding: 1rem 0 0 1rem;
+  color: black;
+  font-family: Libre Franklin;
 }
+
 .footer-section h3 {
-	font-size: 1rem;
-	padding: 0;
-    font-family: Libre Franklin;
+  font-size: 1rem;
+  padding: 0;
+  font-family: Libre Franklin;
 }
+
 .ikoner img {
-	width: 2rem;
-	padding: 0,7rem;
-    width: 50px; 
-    height: auto;
-	display: flex;
+  width: 2rem;
+  padding: 0, 7rem;
+  width: 50px;
+  height: auto;
+  display: flex;
 
 }
-.ikoner{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+
+.ikoner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer-section img{
-	max-width: 150px;
+
+.footer-section img {
+  max-width: 150px;
 }
+
 .footer-section p {
-	font-size: 1.0rem;
-	color: black;
-    font-family: Libre Franklin;
+  font-size: 1.0rem;
+  color: black;
+  font-family: Libre Franklin;
 }
