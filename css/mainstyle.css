@@ -279,7 +279,6 @@ hr {
   padding: 4rem;
   margin: 3rem;
   font-family: Libre Franklin;
-  width: 700px;
 }
 
 .countdown-row {
@@ -294,7 +293,7 @@ hr {
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  width:400px;
+  width: 100px;
 }
 
 .tal {
