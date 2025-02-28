@@ -23,6 +23,24 @@ hr {
   margin: 1rem;
 }
 
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background-color: #D77A61;
+  /* Adjust color if needed */
+  color: #FFFFFF;
+  padding: 25px 40px;
+  font-family: Libre Franklin;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #C46953;
+}
+
+
 /*----------------------------------------------Header------------------------------------------*/
 #site-header {
   position: fixed;
@@ -214,23 +232,6 @@ hr {
   margin-bottom: 25px;
   max-width: 400px;
   font-family: Libre Franklin;
-}
-
-/* CTA Button */
-.cta-btn {
-  display: inline-block;
-  background-color: #D77A61;
-  /* Adjust color if needed */
-  color: #FFFFFF;
-  padding: 25px 40px;
-  font-family: Libre Franklin;
-  font-size: 1.6rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #C46953;
 }
 
 
