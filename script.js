@@ -103,3 +103,50 @@ function startCountdown(targetDate) {
  
 //Kalder funktionen ovenfor for at starte countdown og opdatere
 startCountdown(countdownDate);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+    const loadingBar = document.getElementById("loading-bar");
+    const mainContent = document.getElementById("main-content");
+  
+    // Simulate a loading bar that fills up over time
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 10; // Increase progress
+      loadingBar.style.width = progress + "%";
+  
+      // If progress reaches 100%, check if all media are loaded
+      if (progress >= 100) {
+        clearInterval(interval);
+        checkIfLoaded();
+      }
+    }, 300);
+    
+    function checkIfLoaded() {
+      const media = document.querySelectorAll("img, video");
+      let loadedCount = 0;
+      
+      media.forEach((element) => {
+        if (element.complete) {
+          loadedCount++;
+        } else {
+          element.addEventListener("load", () => {
+            loadedCount++;
+            if (loadedCount === media.length) fadeOutLoadingScreen();
+          });
+        }
+      });
+  
+      if (loadedCount === media.length) fadeOutLoadingScreen();
+    }
+  
+    function fadeOutLoadingScreen() {
+      loadingScreen.style.opacity = "0";
+      setTimeout(() => {
+        loadingScreen.style.display = "none";
+        mainContent.style.display = "block";
+      }, 500); // Smooth fade-out
+    }
+  });
+  
