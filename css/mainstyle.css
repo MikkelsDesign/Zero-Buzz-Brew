@@ -8,6 +8,13 @@
   /* logo af ZBB i øverste venstre hjørne */
 
 
+  hr {
+    height: 0.2rem;
+    background-color: #000000;
+    color: #000000;
+    margin: 1rem;
+  }
+
 #site-header {
     position: fixed;
     top: 0;
@@ -185,7 +192,7 @@
   /* CTA Button */
   .cta-btn {
     display: inline-block;
-    background-color: #D77A61; /* Adjust color if needed */
+    background-color: #e97458; /* Adjust color if needed */
     color: #FFFFFF;
     padding: 25px 40px;
     font-family: Libre Franklin;
@@ -234,10 +241,10 @@
     color: #fff;
   }
   
-  /* CTA button styling (can be reused from earlier .cta-btn styles) */
+  
   .mere-end-promille .cta-btn {
     display: inline-block;
-    background-color: #D77A61; /* Adjust color as needed */
+    background-color: #e97458; 
     color: #fff;
     padding: 25px 40px;
     text-decoration: none;
@@ -252,7 +259,71 @@
   
 
 
-
+/*--------------------------------------------Countdown------------------------------------------*/
+.countdown-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFDEE1;
+  padding: 100px 175px;
+  text-align: center;
+}
+ 
+.countdown-section h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  padding: 0;
+  font-family: Renogare;
+}
+ 
+.countdown-section h3 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+ 
+.countdown-section img {
+  width: 50%;
+  height: auto;
+  object-fit: scale-down;
+}
+ 
+#countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 4rem;
+  margin: 3rem;
+  font-family: Libre Franklin;
+  width: 700px;
+}
+ 
+.countdown-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 1rem 2rem;
+}
+ 
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width:400px;
+}
+ 
+.tal {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+ 
+.vl /*vertikale linjer*/ {
+  border-left: 4px solid black;
+  height: 100px;
+}
 
 
 
@@ -266,7 +337,7 @@
 	gap: 2rem;
 	font-family: Libre Franklin;
 	width: 100%;
-    background-color: #128181; 
+    background-color: #0d8381; 
     width: 100%;
     padding: 45px;
     color: #ffffff;  

@@ -1,4 +1,4 @@
-.scroll-arrow2 {
+.scroll-arrow3 {
     position: absolute;
     bottom: 20px; 
     left: 50%;
@@ -18,24 +18,24 @@
   }
 
 
-  .mere-end-promille2 {
+
+  .omos {
     position: relative;
-    background: url(/img/people.jpeg) no-repeat center center;
+    background: url(/img/omosZBB.png) no-repeat center center;
     background-size: cover;
     margin-top: 105px;
     min-height: 700px; 
     display: flex;
     align-items: flex-end; /* Positions content at the bottom */
-    justify-content: flex-end;
     padding: 80px 40px;
   }
   
-  .mere-end-promille2 .promille-content2 {
+  .omos .omoscontent {
     max-width: 400px; 
     color: #fff;      
   }
   
-  .mere-end-promille2 h2 {
+  .omos h2 {
     font-size: 4rem;
     margin-bottom: 10px;
     font-family: Renogare;
@@ -56,11 +56,18 @@
     margin-top: 105px;
   }
 
+  .text-section1 h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: Renogare;
+    color: #000;
+  }
+
 
 
   .image-section1 {
     position: relative;
-    background: url(/img/gutterPaaCykel.jpg) no-repeat center center;
+    background: url(/img/omOsOel.png) no-repeat center center;
     background-size: cover;
     margin-top: 105px;
     min-height: 700px; 
@@ -70,18 +77,18 @@
 
   .image-content1 {
     margin: 60px auto; 
-    padding: 20px;
+    padding: 120px;
     text-align: left; 
     font-size: 2.2rem; 
     line-height: 1.6;
     font-family: Libre Franklin;
     color:#ffffff;
-    margin-top: 150px;
+    margin-top: 100px;
   }  
 
   .image-section2 {
     position: relative;
-    background: url(/img/pigerDrikkerØl.jpeg) no-repeat center center;
+    background: url(/img/Bryghus.png) no-repeat center center;
     background-size: cover;
     margin-top: 105px;
     min-height: 700px; 
@@ -99,59 +106,4 @@
     color:#ffffff;
     margin-top: 150px;
   } 
-
-  /* Scrolling Banner Styling */
-  .scrolling-banner {
-    width: 100%;
-    overflow: hidden;
-    background-color: #fff;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  /* Track for infinite scrolling */
-  .scrolling-track {
-    display: flex;
-    gap: 60px;
-    white-space: nowrap;
-    animation: scrollBanner linear infinite;
-    will-change: transform;
-  }
-  
-  /* Container for text & logo */
-  .scrolling-item {
-    display: flex;
-    align-items: center;  /* Ensures text and logo are vertically centered */
-    gap: 15px; /* Space between text and logo */
-  }
-  
-  /* Text Styling */
-  .scrolling-text {
-    font-size: 2.4rem;
-    font-family: 'Renogare', sans-serif;
-    font-weight: bold;
-    color: #000;
-    display: flex;
-    align-items: center; /* Ensures perfect vertical alignment */
-  }
-  
-  /* Logo Styling */
-  .scrolling-logo {
-    height: 105px;
-    width: auto;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Smooth Infinite Scrolling */
-  @keyframes scrollBanner {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
+   
