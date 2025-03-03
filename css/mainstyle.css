@@ -23,8 +23,8 @@
   }
 
   #site-header.scrolled {
-    background-color: rgba(255, 255, 255, 0.8); /* Baggrund når der scrolles ned */
-    opacity: 80;
+    background-color: rgba(255, 255, 255, 0.9); /* Baggrund når der scrolles ned */
+    opacity: 100;
   }
 
 
@@ -82,6 +82,7 @@
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 105px;
   }
 
   .scroll-arrow {
@@ -196,6 +197,65 @@
   .cta-btn:hover {
     background-color: #C46953;
   }
+
+
+
+
+
+
+
+
+  .mere-end-promille {
+    position: relative;
+    background: url(/img/people.jpeg) no-repeat center center;
+    background-size: cover;
+    min-height: 700px; /* Adjust height as needed */
+    display: flex;
+    align-items: flex-end; /* Positions content at the bottom */
+    padding: 40px;
+  }
+  
+  .mere-end-promille .promille-content {
+    max-width: 400px; /* Limit width of the text area */
+    color: #fff;      /* Ensure text is visible on the background */
+  }
+  
+  .mere-end-promille h2 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    font-family: Renogare;
+    color: #fff;
+  }
+  
+  .mere-end-promille p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: Libre Franklin;
+    color: #fff;
+  }
+  
+  /* CTA button styling (can be reused from earlier .cta-btn styles) */
+  .mere-end-promille .cta-btn {
+    display: inline-block;
+    background-color: #D77A61; /* Adjust color as needed */
+    color: #fff;
+    padding: 25px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: Libre Franklin;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mere-end-promille .cta-btn:hover {
+    background-color: #C46953;
+  }
+  
+
+
+
+
+
+
   
   .blå-boks {
     color: rgb(0, 0, 0);
