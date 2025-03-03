@@ -155,3 +155,63 @@
     }
   }
   
+
+  /* Beer Selection Section */
+.beer-selection {
+    background-color: #f5e6cc; /* Beige background */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Title */
+  .beer-selection h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: Renogare;
+  }
+  
+  /* Beer Container (Flexbox for two columns) */
+  .beer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; /* Space between cans */
+    flex-wrap: wrap;
+  }
+  
+  /* Beer Items */
+  .beer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Beer Can Styling */
+  .beer-can {
+    width: 200px; /* Adjust as needed */
+    transition: transform 0.3s ease;
+    max-height: 400px;
+  }
+  
+  .beer-can:hover {
+    transform: scale(1.05);
+  }
+  
+  /* CTA Button */
+  .cta-btn {
+    display: inline-block;
+    background-color: #D77A61;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: Libre Franklin;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 70px;
+  }
+  
+  .cta-btn:hover {
+    background-color: #C46953;
+  }
+  
