@@ -38,9 +38,9 @@
 
 /* Loading Bar Container */
 .loading-bar-container {
-  width: 200px; /* Adjust width */
+  width: 200px; 
   height: 4px;
-  background-color: #e0e0e0; /* Light grey background */
+  background-color: #e0e0e0; 
   overflow: hidden;
   position: relative;
   border-radius: 2px;
@@ -48,7 +48,7 @@
 
 /* Moving Bar */
 #loading-bar {
-  width: 50px; /* Smaller size for moving effect */
+  width: 50px; 
   height: 100%;
   background-color: #000;
   position: absolute;
@@ -57,7 +57,7 @@
   border-radius: 2px;
 }
 
-/* Bar moving left to right */
+
 @keyframes movingBar {
   0% {
     left: 0;
@@ -81,7 +81,6 @@
 }
 
 
-  /* logo af ZBB i øverste venstre hjørne */
 
 
   hr {
@@ -91,6 +90,8 @@
     margin: 1rem;
   }
 
+
+ /* logo af ZBB i øverste venstre hjørne */
 #site-header {
     position: fixed;
     top: 0;
@@ -174,7 +175,7 @@
 
   .scroll-arrow {
     position: absolute;
-    bottom: 20px; 
+    bottom: 50px; 
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem; 
@@ -342,35 +343,42 @@
   }
   
 
-
 /*--------------------------------------------Countdown------------------------------------------*/
 .countdown-section {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-content: center;
   justify-content: space-between;
   background-color: #FFDEE1;
-  padding: 100px 175px;
   text-align: center;
+  padding:6rem 3rem;
 }
  
 .countdown-section h2 {
-  font-size: 4.5rem;
+  font-size: 4vw;
   font-weight: 500;
   padding: 0;
-  font-family: Renogare;
 }
  
 .countdown-section h3 {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   padding: 0;
   margin-top: 1rem;
 }
  
 .countdown-section img {
-  width: 50%;
+  max-width: 40%;
   height: auto;
   object-fit: scale-down;
+}
+ 
+.countdown-right{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  width:50%;
 }
  
 #countdown {
@@ -378,10 +386,10 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #FFFFFF;
-  padding: 4rem;
-  margin: 3rem;
+  padding: 30px;
+  width:100%;
+  height: auto;
   font-family: Libre Franklin;
-  width: 700px;
 }
  
 .countdown-row {
@@ -396,18 +404,19 @@
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  width:400px;
+  width: 100px;
 }
  
 .tal {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   font-weight: 700;
 }
  
-.vl /*vertikale linjer*/ {
+.vl {
   border-left: 4px solid black;
   height: 100px;
 }
+ 
 
 
 
