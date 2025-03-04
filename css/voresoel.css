@@ -1,0 +1,123 @@
+h2 {
+    margin: 0;
+    font-size: 4vw;
+}
+
+h3{
+    font-size: 3vw;
+    margin-bottom: 15px;
+    font-family: Libre Franklin;
+    font-weight: 500;
+    padding: 0;
+}
+
+h4{
+    font-size: 2vw;
+    margin-bottom: 15px;
+    font-family: Libre Franklin;
+    font-weight: 500;
+    padding: 0;
+}
+
+
+
+.pils-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #F5E6CC;
+    padding: 4rem;
+}
+
+.pils-img{
+   max-width: 20%;
+    margin: 4rem;
+    margin-left: 6rem;
+}
+
+ul li {
+    margin: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 0.2rem;
+    margin: 0;
+}
+
+.accordion-section{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    max-width: 700px;
+}
+
+.accordion{
+    margin-top: 1rem;
+}
+
+.accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0rem 0.5rem 0rem;
+}
+
+#smag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 2rem 2rem 1rem;
+}
+
+
+.accordion-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.icon{
+    margin:1rem;
+}
+
+.icon div{
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.icon #linje1{transform: translate(0,2.5px);}
+.icon #linje2{transform: rotate(90deg);}
+
+.menuAaben #linje2{transform: rotate(0deg);}
+
+
+.visMenu {
+    opacity: 1; 
+    max-height: 500px; /* En stor nok værdi til at vise alt indhold */
+}
+
+.naering{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 1rem;
+flex-wrap: wrap;
+}
+
+.indhold{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.indhold p{
+    font-size: 2vw;
+}

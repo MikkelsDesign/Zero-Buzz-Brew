@@ -295,7 +295,7 @@ hr {
   font-weight: 700;
 }
 
-.vl {
+.vl /*vertikale linjer*/ { 
   border-left: 4px solid black;
   height: 100px;
 }
