@@ -107,46 +107,48 @@ startCountdown(countdownDate);
 
 document.addEventListener("DOMContentLoaded", function () {
     const loadingScreen = document.getElementById("loading-screen");
-    const loadingBar = document.getElementById("loading-bar");
-    const mainContent = document.getElementById("main-content");
+    const mediaElements = document.querySelectorAll("img, video");
+    let loadedCount = 0;
+    let isLoaded = false;
   
-    // Simulate a loading bar that fills up over time
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 10; // Increase progress
-      loadingBar.style.width = progress + "%";
+    function checkIfLoaded() {
+      if (isLoaded) return; // Prevent duplicate calls
   
-      // If progress reaches 100%, check if all media are loaded
-      if (progress >= 100) {
-        clearInterval(interval);
+      isLoaded = true;
+      loadingScreen.style.opacity = "0";
+  
+      setTimeout(() => {
+        loadingScreen.remove(); // Remove the loader from the DOM
+      }, 500);
+    }
+  
+    function mediaLoaded() {
+      loadedCount++;
+      if (loadedCount >= mediaElements.length) {
         checkIfLoaded();
       }
-    }, 300);
-    
-    function checkIfLoaded() {
-      const media = document.querySelectorAll("img, video");
-      let loadedCount = 0;
-      
-      media.forEach((element) => {
+    }
+  
+    // If no media elements, remove loading screen immediately
+    if (mediaElements.length === 0) {
+      checkIfLoaded();
+    } else {
+      mediaElements.forEach((element) => {
         if (element.complete) {
-          loadedCount++;
+          mediaLoaded();
         } else {
-          element.addEventListener("load", () => {
-            loadedCount++;
-            if (loadedCount === media.length) fadeOutLoadingScreen();
-          });
+          element.addEventListener("load", mediaLoaded);
+          element.addEventListener("error", mediaLoaded); // Count failed loads too
         }
       });
-  
-      if (loadedCount === media.length) fadeOutLoadingScreen();
     }
   
-    function fadeOutLoadingScreen() {
-      loadingScreen.style.opacity = "0";
-      setTimeout(() => {
-        loadingScreen.style.display = "none";
-        mainContent.style.display = "block";
-      }, 500); // Smooth fade-out
-    }
+    // Failsafe: Force remove loader after 5 seconds max
+    setTimeout(checkIfLoaded, 5000);
+  
+    // Ensure `window.onload` is used in case all else fails
+    window.onload = () => {
+      setTimeout(checkIfLoaded, 200);
+    };
   });
   
