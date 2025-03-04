@@ -5,6 +5,14 @@
     box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: 'Renogare';
+    src: url('/fonts/Renogare-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 /* Loading Screen */
 #loading-screen {
   position: fixed;
@@ -179,13 +187,13 @@
     }
   }
   
- /* Product Teaser Section */
+
 .product-teaser {
-    background-color: #F5E6CC; /* Beige background */
+    background-color: #F5E6CC; 
     padding: 60px 240px;
   }
   
-  /* Container for cans + text side by side */
+ 
   .product-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -195,51 +203,51 @@
     justify-content: space-between;
   }
   
-  /* Cans container with fixed dimensions to position images absolutely */
+  
   .cans {
     position: relative;
-    width: 350px;  /* Adjust to fit your images and desired overlap */
-    height: 250px; /* Enough height for your tallest can */
+    width: 350px;  
+    height: 250px; 
     flex: 0 0 auto; 
-    margin-right: 40px; /* Space between cans and text */
+    margin-right: 40px; 
   }
   
-  /* Base styling for all cans */
+  
   .can {
     position: absolute;
     transition: transform 0.3s ease;
   }
   
-  /* Hover effect (optional) */
+ 
   .can:hover {
     transform: scale(1.05);
   }
   
   /* Lightstream Pils (front can, largest) */
   .lightstream {
-    width: 200px;   /* Adjust size as needed */
-    left: 0;        /* Position at the left edge */
-    top: 0;         /* Adjust vertical positioning if desired */
-    z-index: 3;     /* Highest z-index so it's in front */
+    width: 200px;   
+    left: 0;      
+    top: 0;         
+    z-index: 3;     
   }
   
   /* Luftkastel Blanc (middle can) */
   .luftkastel {
-    width: 180px;   /* Slightly smaller */
-    left: 120px;     /* Overlap Lightstream */
-    top: 20px;      /* Slight vertical offset */
+    width: 180px;  
+    left: 120px;   
+    top: 20px;     
     z-index: 2;
   }
   
   /* Peach Haze IPA (back can, smallest) */
   .Sunset-IPA {
-    width: 200px;   /* Smallest can */
-    left: 240px;    /* Further overlap */
-    top: 50px;      /* A bit lower to create depth */
+    width: 200px;   
+    left: 240px;    
+    top: 50px;      
     z-index: 1;
   }
   
-  /* Product Text on the right */
+  
   .product-text {
     text-align: left;
   }
@@ -257,10 +265,10 @@
     font-family: Libre Franklin; 
   }
   
-  /* CTA Button */
+  
   .cta-btn {
     display: inline-block;
-    background-color: #e97458; /* Adjust color if needed */
+    background-color: #e97458; 
     color: #FFFFFF;
     padding: 25px 40px;
     font-family: Libre Franklin;
@@ -284,15 +292,15 @@
     position: relative;
     background: url(/img/people.jpeg) no-repeat center center;
     background-size: cover;
-    min-height: 700px; /* Adjust height as needed */
+    min-height: 700px; 
     display: flex;
-    align-items: flex-end; /* Positions content at the bottom */
+    align-items: flex-end; 
     padding: 40px;
   }
   
   .mere-end-promille .promille-content {
-    max-width: 400px; /* Limit width of the text area */
-    color: #fff;      /* Ensure text is visible on the background */
+    max-width: 400px; 
+    color: #fff;      
   }
   
   .mere-end-promille h2 {
@@ -392,6 +400,52 @@
   border-left: 4px solid black;
   height: 100px;
 }
+
+
+
+
+.om-os {
+  position: relative;
+  background: url(/img/omosZBB.png) no-repeat center center;
+  background-size: cover;
+  min-height: 700px; 
+  display: flex;
+  align-items: flex-end; 
+  padding: 40px;
+}
+
+.om-os .om-oscontent {
+  max-width: 400px; 
+  color: #fff;      
+}
+
+.om-os h2 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-family: Renogare;
+  color: #fff;
+}
+
+
+.om-os .cta-btn {
+  display: inline-block;
+  background-color: #e97458; 
+  color: #fff;
+  padding: 25px 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Libre Franklin;
+  transition: background-color 0.3s ease;
+}
+
+.om-os .cta-btn:hover {
+  background-color: #C46953;
+}
+
+
+
+
+
 
 
 
