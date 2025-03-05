@@ -177,7 +177,7 @@ hr {
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
-  color: #008080;
+  color: #ffffff;
   animation: arrowMove 1.5s infinite ease-in-out;
 }
 
