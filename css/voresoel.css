@@ -154,11 +154,11 @@ hr {
     transition: all 0.3s ease;
 }
  
-.icon #linje1 {
+.icon .linje1 {
     transform: translate(0, 2.5px);
 }
  
-.icon #linje2 {
+.icon .linje2 {
     transform: rotate(90deg);
 }
  
@@ -224,7 +224,7 @@ hr {
  
  
 /* Animationer for åben menu*/
-.menuAaben #linje2 {
+.menuAaben .linje2 {
     transform: rotate(0deg);
 }
  
