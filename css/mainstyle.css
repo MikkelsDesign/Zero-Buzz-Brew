@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* logo af ZBB i øverste venstre hjørne */
 
 /*Generel CSS*/
@@ -21,6 +23,7 @@ hr {
   background-color: #000000;
   color: #000000;
   margin: 1rem;
+  width: auto;
 }
 
 /* CTA Button */
@@ -133,7 +136,7 @@ hr {
   animation: arrowMove 1.5s infinite ease-in-out;
 }
 
-#whitearrow{
+#whitearrow {
   color: #FFFFFF;
 }
 
@@ -246,20 +249,21 @@ hr {
 .countdown-section {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-between;
   background-color: #FFDEE1;
   text-align: center;
+  padding:6rem 3rem;
 }
 
 .countdown-section h2 {
-  font-size: 4.5rem;
+  font-size: 4vw;
   font-weight: 500;
   padding: 0;
 }
 
 .countdown-section h3 {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   padding: 0;
   margin-top: 1rem;
 }
@@ -268,11 +272,15 @@ hr {
   max-width: 40%;
   height: auto;
   object-fit: scale-down;
-  margin: 6rem 3rem;
 }
 
 .countdown-right{
-  margin: 6rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  width:50%;
 }
 
 #countdown {
@@ -280,9 +288,8 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   background-color: #FFFFFF;
-  padding: 10%;
-  width: auto;
-  max-width: 100%;
+  padding: 30px;
+  width:100%;
   height: auto;
   font-family: Libre Franklin;
 }
@@ -303,7 +310,7 @@ hr {
 }
 
 .tal {
-  font-size: 3.5rem;
+  font-size: 3.5vw;
   font-weight: 700;
 }
 
@@ -315,30 +322,33 @@ hr {
 
 /*--------------------------------------------Om Os og Promille--------------------------------------------*/
 
-.omoszbb{
+.omoszbb {
   width: 100%;
   height: 850px;
   object-fit: cover;
-  object-position:center;
+  object-position: center;
 }
-.tekstboks{
+
+.tekstboks {
   padding: 150px;
 }
-.tekstboks p{
+
+.tekstboks p {
   align-items: center;
   font-size: 40px;
   display: flex;
   max-width: 900px;
   margin: 0 auto;
 }
-.tekstboks h1{
+
+.tekstboks h1 {
   font-size: 60px;
   margin: 0 auto;
   max-width: 900px;
   margin: 0 auto;
 }
- 
- 
+
+
 
 /* ---------------------------------------styling af footer ---------------------------------------*/
 .blå-boks {
